@@ -1,0 +1,15 @@
+* Schematics Netlist *
+
+.EXTERNAL OUTPUT Q1
+
+
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND $N_0001 IO_STM IO_LEVEL=0 
++ 0 0
++ +.5ms 1
++REPEAT FOREVER
++ +.5ms 0
++  +.5ms 1
++ ENDREPEAT
+X_U1A         $N_0001 $D_HI $D_HI $D_HI $D_HI Q1 $N_0004 $G_DPWR $G_DGND 74111
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0

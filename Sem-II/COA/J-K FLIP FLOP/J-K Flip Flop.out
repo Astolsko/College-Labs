@@ -1,0 +1,235 @@
+
+**** 02/21/24 10:02:13 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\J-K Flip Flop.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Feb 21 09:57:38 2024
+
+
+
+** Analysis setup **
+.tran 0.5ms 4ms
+.OPTIONS DIGINITSTATE=0
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "J-K Flip Flop.net"
+
+**** INCLUDING "J-K Flip Flop.net" ****
+* Schematics Netlist *
+
+.EXTERNAL OUTPUT Q1
+
+
+U_DSTM1         STIM(1,1) $G_DPWR $G_DGND $N_0001 IO_STM IO_LEVEL=0 
++ 0 0
++ +.5ms 1
++REPEAT FOREVER
++ +.5ms 0
++  +.5ms 1
++ ENDREPEAT
+X_U1A         $N_0001 $D_HI $D_HI $D_HI $D_HI Q1 $N_0004 $G_DPWR $G_DGND 74111
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING "J-K Flip Flop.cir" ****
+.INC "J-K Flip Flop.als"
+
+
+
+**** INCLUDING "J-K Flip Flop.als" ****
+* Schematics Aliases *
+
+.ALIASES
+U_DSTM1          DSTM1(PWR=$G_DPWR GND=$G_DGND 1=$N_0001 )
+X_U1A           U1A(CLK=$N_0001 PREbar=$D_HI CLRbar=$D_HI J=$D_HI K=$D_HI Q=Q1
++  Qbar=$N_0004 PWR=$G_DPWR GND=$G_DGND )
+_    _(Q1=Q1)
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+
+
+**** RESUMING "J-K Flip Flop.cir" ****
+.probe
+
+
+.END
+
+**** 02/21/24 10:02:13 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\J-K Flip Flop.sch
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         
+      TPLHMN    0            
+      TPLHTY    0            
+      TPLHMX    0            
+      TPHLMN    0            
+      TPHLTY    0            
+      TPHLMX    0            
+
+
+**** 02/21/24 10:02:13 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\J-K Flip Flop.sch
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_111_1         
+  TPCLKQLHMN    0            
+  TPCLKQLHTY    0            
+  TPCLKQLHMX    0            
+  TPCLKQHLMN    0            
+  TPCLKQHLTY    0            
+  TPCLKQHLMX    0            
+   TPPCQLHMN    0            
+   TPPCQLHTY    0            
+   TPPCQLHMX    0            
+   TPPCQHLMN    0            
+   TPPCQHLTY    0            
+   TPPCQHLMX    0            
+    TWCLKLMN    0            
+    TWCLKLTY   25.000000E-09 
+    TWCLKLMX   25.000000E-09 
+    TWCLKHMN    0            
+    TWCLKHTY   25.000000E-09 
+    TWCLKHMX   25.000000E-09 
+     TWPCLMN    0            
+     TWPCLTY   25.000000E-09 
+     TWPCLMX   25.000000E-09 
+   TSUDCLKMN    0            
+   TSUDCLKTY    0            
+   TSUDCLKMX    0            
+ TSUPCCLKHMN    0            
+ TSUPCCLKHTY    0            
+ TSUPCCLKHMX    0            
+    THDCLKMN    0            
+    THDCLKTY   30.000000E-09 
+    THDCLKMX   30.000000E-09 
+  TSUCECLKMN    0            
+  TSUCECLKTY    0            
+  TSUCECLKMX    0            
+   THCECLKMN    0            
+   THCECLKTY    0            
+   THCECLKMX    0            
+
+
+**** 02/21/24 10:02:13 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\J-K Flip Flop.sch
+
+
+ ****     Digital Gated FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_111_2         
+    TPDQLHMN    0            
+    TPDQLHTY    0            
+    TPDQLHMX    0            
+    TPDQHLMN    0            
+    TPDQHLTY    0            
+    TPDQHLMX    0            
+    TPGQLHMN    4.800000E-09 
+    TPGQLHTY   12.000000E-09 
+    TPGQLHMX   17.000000E-09 
+    TPGQHLMN    8.000000E-09 
+    TPGQHLTY   20.000000E-09 
+    TPGQHLMX   30.000000E-09 
+   TPPCQLHMN    4.800000E-09 
+   TPPCQLHTY   12.000000E-09 
+   TPPCQLHMX   18.000000E-09 
+   TPPCQHLMN    8.400000E-09 
+   TPPCQHLTY   21.000000E-09 
+   TPPCQHLMX   30.000000E-09 
+      TWGHMN    0            
+      TWGHTY   25.000000E-09 
+      TWGHMX   25.000000E-09 
+     TWPCLMN    0            
+     TWPCLTY   25.000000E-09 
+     TWPCLMX   25.000000E-09 
+     TSUDGMN    0            
+     TSUDGTY    0            
+     TSUDGMX    0            
+   TSUPCGHMN    0            
+   TSUPCGHTY    0            
+   TSUPCGHMX    0            
+      THDGMN    0            
+      THDGTY    0            
+      THDGMX    0            
+
+
+**** 02/21/24 10:02:13 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\J-K Flip Flop.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.373000E-09 
+      TSWHL2                    1.346000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.382000E-09 
+      TSWLH2                    3.424000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+WARNING -- No analog devices -- Small-Signal analysis ignored
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            0.00
+

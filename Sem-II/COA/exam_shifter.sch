@@ -1,0 +1,379 @@
+*version 9.1 197800838
+u 148
+U? 20
+DSTM? 3
+@libraries
+@analysis
+.TRAN 1 0 0 0
++0 0ns
++1 1000ns
+.STMLIB C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.stl
+@targets
+@attributes
+@translators
+a 0 u 13 0 0 0 hln 100 PCBOARDS=PCB
+a 0 u 13 0 0 0 hln 100 PSPICE=PSPICE
+a 0 u 13 0 0 0 hln 100 XILINX=XILINX
+@setup
+unconnectedPins 0
+connectViaLabel 0
+connectViaLocalLabels 0
+NoStim4ExtIFPortsWarnings 1
+AutoGenStim4ExtIFPorts 1
+@index
+pageloc 1 0 6692 
+@status
+n 0 124:03:26:10:23:21;1714107201 e 
+s 2832 124:03:26:10:24:05;1714107245 e 
+*page 1 0 970 720 iA
+@ports
+port 147 IF_OUT 560 520 h
+a 1 xr 3 0 31 8 hcn 100 LABEL=OUT
+@parts
+part 129 7408 300 90 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U4
+a 0 ap 9 0 40 0 hln 100 REFDES=U4A
+part 130 7404 200 110 h
+a 0 sp 11 0 40 40 hln 100 PART=7404
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U5
+a 0 ap 9 0 28 8 hln 100 REFDES=U5A
+part 131 7408 330 220 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U6
+a 0 ap 9 0 40 0 hln 100 REFDES=U6A
+part 132 7404 230 240 h
+a 0 sp 11 0 40 40 hln 100 PART=7404
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U7
+a 0 ap 9 0 28 8 hln 100 REFDES=U7A
+part 133 7404 250 370 h
+a 0 sp 11 0 40 40 hln 100 PART=7404
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U8
+a 0 ap 9 0 28 8 hln 100 REFDES=U8A
+part 134 7408 330 400 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U9
+a 0 ap 9 0 40 0 hln 100 REFDES=U9A
+part 135 7432 450 130 h
+a 0 sp 11 0 40 50 hln 100 PART=7432
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U10
+a 0 ap 9 0 40 0 hln 100 REFDES=U10A
+part 136 7432 480 260 h
+a 0 sp 11 0 40 50 hln 100 PART=7432
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U11
+a 0 ap 9 0 40 0 hln 100 REFDES=U11A
+part 137 7408 350 350 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U12
+a 0 ap 9 0 40 0 hln 100 REFDES=U12A
+part 138 7432 500 390 h
+a 0 sp 11 0 40 50 hln 100 PART=7432
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U13
+a 0 ap 9 0 40 0 hln 100 REFDES=U13A
+part 139 7404 240 490 h
+a 0 sp 11 0 40 40 hln 100 PART=7404
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U14
+a 0 ap 9 0 28 8 hln 100 REFDES=U14A
+part 140 7408 340 470 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U15
+a 0 ap 9 0 40 0 hln 100 REFDES=U15A
+part 141 7408 310 270 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U16
+a 0 ap 9 0 40 0 hln 100 REFDES=U16A
+part 142 7408 280 140 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U17
+a 0 ap 9 0 40 0 hln 100 REFDES=U17A
+part 143 7408 320 520 h
+a 0 sp 11 0 40 50 hln 100 PART=7408
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U18
+a 0 ap 9 0 40 0 hln 100 REFDES=U18A
+part 144 7432 490 510 h
+a 0 sp 11 0 40 50 hln 100 PART=7432
+a 0 s 0:13 0 0 0 hln 100 PKGTYPE=DIP14
+a 0 s 0:13 0 0 0 hln 100 GATE=A
+a 0 a 0:13 0 0 0 hln 100 PKGREF=U19
+a 0 ap 9 0 40 0 hln 100 REFDES=U19A
+part 146 DigStim 180 80 h
+a 1 ap 9 0 -17 9 hcn 100 REFDES=DSTM2
+a 0 s 13 13 4 19 hln 70 STIMULUS=DSTM2
+a 0 a 0:13 0 0 0 hln 100 PKGREF=DSTM2
+part 145 DigStim 150 70 d
+a 1 ap 9 0 8 -36 hcn 100 REFDES=DSTM1
+a 0 a 0:13 0 0 0 hln 100 PKGREF=DSTM1
+a 0 s 13 13 4 19 hln 70 STIMULUS=DSTM1
+part 1 titleblk 970 720 h
+a 1 s 13 0 350 10 hcn 100 PAGESIZE=A
+a 1 s 13 0 180 60 hcn 100 PAGETITLE=
+a 1 s 13 0 300 95 hrn 100 PAGENO=1
+a 1 s 13 0 340 95 hrn 100 PAGECOUNT=1
+@conn
+w 6
+s 300 110 250 110 5
+w 8
+s 370 100 370 130 7
+s 370 130 450 130 9
+w 12
+s 450 150 350 150 11
+w 14
+s 200 110 180 110 13
+s 180 110 180 160 15
+s 180 160 280 160 17
+w 20
+s 330 240 280 240 19
+w 22
+s 400 230 400 260 21
+s 400 260 480 260 23
+w 26
+s 480 280 380 280 25
+w 28
+s 230 240 210 240 27
+s 210 240 210 290 29
+s 210 290 310 290 31
+w 34
+s 350 370 300 370 33
+w 36
+s 420 360 420 390 35
+s 420 390 500 390 37
+w 40
+s 500 410 400 410 39
+w 42
+s 250 370 230 370 41
+s 230 370 230 420 43
+s 230 420 330 420 45
+w 48
+s 310 210 310 220 47
+s 310 220 330 220 49
+s 520 140 520 190 51
+s 520 190 180 190 53
+s 180 190 180 210 55
+s 180 210 310 210 57
+w 60
+s 550 270 550 320 59
+s 550 320 200 320 61
+s 200 320 200 340 63
+s 330 340 330 350 65
+s 330 350 350 350 67
+s 200 340 330 340 69
+w 72
+s 220 540 320 540 71
+s 220 490 220 540 73
+s 240 490 220 490 75
+w 78
+s 490 530 390 530 77
+w 80
+s 410 510 490 510 79
+s 410 480 410 510 81
+w 84
+s 340 490 290 490 83
+w 86
+s 570 400 610 400 85
+s 610 400 610 440 87
+s 610 440 320 440 89
+s 320 470 340 470 91
+s 320 440 320 470 93
+w 96
+s 330 400 200 400 95
+s 310 270 180 270 97
+s 280 140 150 140 99
+s 150 70 150 140 101
+s 150 140 150 250 103
+s 150 250 180 250 105
+s 180 250 180 270 107
+s 180 270 180 390 109
+s 180 390 200 390 111
+s 200 390 200 400 113
+s 200 400 200 500 115
+s 200 500 190 500 117
+s 320 520 190 520 119
+s 190 500 190 520 121
+w 124
+s 180 80 280 80 123
+s 280 80 280 90 125
+s 280 90 300 90 127
+@junction
+j 300 110
++ p 129 B
++ w 6
+j 370 100
++ p 129 Y
++ w 8
+j 300 90
++ p 129 A
++ w 124
+j 250 110
++ p 130 Y
++ w 6
+j 200 110
++ p 130 A
++ w 14
+j 330 240
++ p 131 B
++ w 20
+j 400 230
++ p 131 Y
++ w 22
+j 330 220
++ p 131 A
++ w 48
+j 280 240
++ p 132 Y
++ w 20
+j 230 240
++ p 132 A
++ w 28
+j 300 370
++ p 133 Y
++ w 34
+j 250 370
++ p 133 A
++ w 42
+j 400 410
++ p 134 Y
++ w 40
+j 330 420
++ p 134 B
++ w 42
+j 450 130
++ p 135 A
++ w 8
+j 450 150
++ p 135 B
++ w 12
+j 520 140
++ p 135 Y
++ w 48
+j 480 260
++ p 136 A
++ w 22
+j 480 280
++ p 136 B
++ w 26
+j 550 270
++ p 136 Y
++ w 60
+j 350 370
++ p 137 B
++ w 34
+j 420 360
++ p 137 Y
++ w 36
+j 350 350
++ p 137 A
++ w 60
+j 500 390
++ p 138 A
++ w 36
+j 500 410
++ p 138 B
++ w 40
+j 570 400
++ p 138 Y
++ w 86
+j 240 490
++ p 139 A
++ w 72
+j 290 490
++ p 139 Y
++ w 84
+j 410 480
++ p 140 Y
++ w 80
+j 340 490
++ p 140 B
++ w 84
+j 340 470
++ p 140 A
++ w 86
+j 380 280
++ p 141 Y
++ w 26
+j 310 290
++ p 141 B
++ w 28
+j 350 150
++ p 142 Y
++ w 12
+j 280 160
++ p 142 B
++ w 14
+j 320 540
++ p 143 B
++ w 72
+j 390 530
++ p 143 Y
++ w 78
+j 490 530
++ p 144 B
++ w 78
+j 490 510
++ p 144 A
++ w 80
+j 180 80
++ p 146 *OUT
++ w 124
+j 560 520
++ s 147
++ p 144 Y
+j 150 140
++ w 96
++ w 96
+j 180 270
++ w 96
++ w 96
+j 200 400
++ w 96
++ w 96
+j 330 400
++ p 134 A
++ w 96
+j 310 270
++ p 141 A
++ w 96
+j 280 140
++ p 142 A
++ w 96
+j 320 520
++ p 143 A
++ w 96
+j 150 70
++ p 145 *OUT
++ w 96
+@attributes
+a 0 s 0:13 0 0 0 hln 100 PAGETITLE=
+a 0 s 0:13 0 0 0 hln 100 PAGENO=1
+a 0 s 0:13 0 0 0 hln 100 PAGESIZE=A
+a 0 s 0:13 0 0 0 hln 100 PAGECOUNT=1
+@graphics

@@ -1,0 +1,24 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\J-K Flip Flop.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Feb 21 09:57:38 2024
+
+
+
+** Analysis setup **
+.tran 0.5ms 4ms
+.OPTIONS DIGINITSTATE=0
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "J-K Flip Flop.net"
+.INC "J-K Flip Flop.als"
+
+
+.probe
+
+
+.END

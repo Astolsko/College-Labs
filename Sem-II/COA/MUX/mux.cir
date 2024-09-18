@@ -1,0 +1,25 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\MUX\mux.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Apr 20 00:41:59 2024
+
+
+
+** Analysis setup **
+.tran 0ns 4s 0 0.5s
+.OP 
+.STMLIB "C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\mux.stl"
+.STMLIB "mux.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "mux.net"
+.INC "mux.als"
+
+
+.probe
+
+
+.END

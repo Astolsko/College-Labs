@@ -1,0 +1,24 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\full_adder.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Feb 02 10:57:47 2024
+
+
+
+** Analysis setup **
+.tran 0.5ms 4ms
+.OP 
+.STMLIB "C:\Users\abul4\OneDrive\Desktop\College_Labs\full_adder.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "full_adder.net"
+.INC "full_adder.als"
+
+
+.probe
+
+
+.END

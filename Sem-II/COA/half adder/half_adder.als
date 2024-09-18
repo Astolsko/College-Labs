@@ -1,0 +1,12 @@
+* Schematics Aliases *
+
+.ALIASES
+X_U1A           U1A(A=$N_0001 B=$N_0002 Y=$N_0003 PWR=$G_DPWR GND=$G_DGND )
+X_U2A           U2A(A=$N_0001 B=$N_0002 Y=$N_0004 PWR=$G_DPWR GND=$G_DGND )
+X_U3A           U3A(A=$N_0001 B=$N_0002 Y=$N_0004 PWR=$G_DPWR GND=$G_DGND )
+U_DSTM1          DSTM1(PIN1=$N_0001 )
+U_DSTM2          DSTM2(PIN1=$N_0002 )
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+

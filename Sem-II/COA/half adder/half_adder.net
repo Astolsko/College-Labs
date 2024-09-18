@@ -1,0 +1,28 @@
+* Schematics Netlist *
+
+
+
+X_U1A         $N_0001 $N_0002 $N_0003 $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         $N_0001 $N_0002 $N_0004 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         $N_0001 $N_0002 $N_0004 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM1         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0001 
++ IO_STM
++ IO_LEVEL=0
++ TIMESTEP=1s 
++ 0s 0  
+U_DSTM2         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0002 
++ IO_STM
++ IO_LEVEL=0
++ TIMESTEP=0.5s 
++ 0s 0  
++ 0.5s 1  
++ 1s 0  
++ 1.5s 1 
++ 2s 0  

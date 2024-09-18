@@ -1,0 +1,111 @@
+
+**** 04/20/24 00:42:32 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\MUX\mux.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Sat Apr 20 00:41:59 2024
+
+
+
+** Analysis setup **
+.tran 0ns 4s 0 0.5s
+.OP 
+.STMLIB "C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\mux.stl"
+------------------------------------------------------------------$
+ERROR -- Unable to open file.
+.STMLIB "mux.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+-----------------$
+ERROR -- Unable to open file.
+.lib "nom.lib"
+
+.INC "mux.net"
+
+**** INCLUDING mux.net ****
+* Schematics Netlist *
+
+
+
+X_U2A         $N_0001 $N_0002 $N_0003 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         $N_0004 $N_0005 $N_0006 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4A         $N_0003 $N_0006 $N_0007 $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U1A         $N_0004 $N_0001 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM4         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0004 
++ IO_STM
++ IO_LEVEL=0
++ TIMESTEP=1 
++ 0s 0  
++ 1s 1  
++ 2s 0  
++ 3s 1 
++ 4s 0  
+U_DSTM5         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0002 
++ IO_STM
++ IO_LEVEL=0
++ TIMESTEP=0.5s 
++ 0s 0  
++ 0.5s 1  
++ 1s 0  
++ 1.5s 1 
++ 2s 0  
++ 2.5s 1  
+U_DSTM6         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0005 
++ IO_STM
++ IO_LEVEL=0
++ TIMESTEP=0.5s 
++ 0s 1  
++ 0.5s 0  
++ 1s 1  
++ 1.5s 0 
++ 2s 1  
++ 2.5s 0  
+
+**** RESUMING mux.cir ****
+.INC "mux.als"
+
+
+
+**** INCLUDING mux.als ****
+* Schematics Aliases *
+
+.ALIASES
+X_U2A           U2A(A=$N_0001 B=$N_0002 Y=$N_0003 PWR=$G_DPWR GND=$G_DGND )
+X_U3A           U3A(A=$N_0004 B=$N_0005 Y=$N_0006 PWR=$G_DPWR GND=$G_DGND )
+X_U4A           U4A(A=$N_0003 B=$N_0006 Y=$N_0007 PWR=$G_DPWR GND=$G_DGND )
+X_U1A           U1A(A=$N_0004 Y=$N_0001 PWR=$G_DPWR GND=$G_DGND )
+U_DSTM4          DSTM4(PIN1=$N_0004 )
+U_DSTM5          DSTM5(PIN1=$N_0002 )
+U_DSTM6          DSTM6(PIN1=$N_0005 )
+_    _($G_DGND=$G_DGND)
+_    _($G_DPWR=$G_DPWR)
+.ENDALIASES
+
+
+**** RESUMING mux.cir ****
+.probe
+
+
+.END
+

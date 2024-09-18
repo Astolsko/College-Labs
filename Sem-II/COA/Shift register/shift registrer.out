@@ -1,0 +1,188 @@
+
+**** 04/26/24 10:36:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\Shift register\shift registrer.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Apr 19 10:18:56 2024
+
+
+
+** Analysis setup **
+.tran 0ms 10ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "shift registrer.net"
+
+**** INCLUDING "shift registrer.net" ****
+* Schematics Netlist *
+
+
+
+U_DSTM1         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0001 
++ IO_STM
++ IO_LEVEL=0
++  0s 0  
++ 1ms 1  
++ 2ms 0  
++ 3ms 1 
++ 4ms 0  
++ 5ms 1  
+U_DSTM3         STIM(1,1) $G_DPWR $G_DGND $N_0002 IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5ms 1
++REPEAT FOREVER
++ +0.5ms 0
++  +0.5ms 1
++ ENDREPEAT
+X_U1A         $D_HI $N_0001 $N_0002 $D_HI $N_0005 $N_0006 $G_DPWR $G_DGND 7474
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         $D_HI $N_0005 $N_0002 $D_HI $N_0007 $N_0008 $G_DPWR $G_DGND 7474
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         $N_0009 $N_0007 $N_0002 $D_HI $N_0010 $N_0011 $G_DPWR $G_DGND
++  7474 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4A         $D_HI $N_0010 $N_0002 $D_HI $N_0012 $N_0013 $G_DPWR $G_DGND 7474
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING "shift registrer.cir" ****
+.INC "shift registrer.als"
+
+
+
+**** INCLUDING "shift registrer.als" ****
+* Schematics Aliases *
+
+.ALIASES
+U_DSTM1          DSTM1(PIN1=$N_0001 )
+U_DSTM3          DSTM3(PWR=$G_DPWR GND=$G_DGND 1=$N_0002 )
+X_U1A           U1A(CLRbar=$D_HI D=$N_0001 CLK=$N_0002 PREbar=$D_HI Q=$N_0005
++  Qbar=$N_0006 PWR=$G_DPWR GND=$G_DGND )
+X_U2A           U2A(CLRbar=$D_HI D=$N_0005 CLK=$N_0002 PREbar=$D_HI Q=$N_0007
++  Qbar=$N_0008 PWR=$G_DPWR GND=$G_DGND )
+X_U3A           U3A(CLRbar=$N_0009 D=$N_0007 CLK=$N_0002 PREbar=$D_HI Q=$N_0010
++  Qbar=$N_0011 PWR=$G_DPWR GND=$G_DGND )
+X_U4A           U4A(CLRbar=$D_HI D=$N_0010 CLK=$N_0002 PREbar=$D_HI Q=$N_0012
++  Qbar=$N_0013 PWR=$G_DPWR GND=$G_DGND )
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+
+
+**** RESUMING "shift registrer.cir" ****
+.probe
+
+
+.END
+
+**** 04/26/24 10:36:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\Shift register\shift registrer.sch
+
+
+ ****     Digital Edge Triggered FF MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_74            
+  TPCLKQLHMN    5.600000E-09 
+  TPCLKQLHTY   14.000000E-09 
+  TPCLKQLHMX   25.000000E-09 
+  TPCLKQHLMN    8.000000E-09 
+  TPCLKQHLTY   20.000000E-09 
+  TPCLKQHLMX   40.000000E-09 
+   TPPCQLHMN    6.250000E-09 
+   TPPCQLHTY   15.625000E-09 
+   TPPCQLHMX   25.000000E-09 
+   TPPCQHLMN   10.000000E-09 
+   TPPCQHLTY   25.000000E-09 
+   TPPCQHLMX   40.000000E-09 
+    TWCLKLMN   37.000000E-09 
+    TWCLKLTY   37.000000E-09 
+    TWCLKLMX   37.000000E-09 
+    TWCLKHMN   30.000000E-09 
+    TWCLKHTY   30.000000E-09 
+    TWCLKHMX   30.000000E-09 
+     TWPCLMN   30.000000E-09 
+     TWPCLTY   30.000000E-09 
+     TWPCLMX   30.000000E-09 
+   TSUDCLKMN   20.000000E-09 
+   TSUDCLKTY   20.000000E-09 
+   TSUDCLKMX   20.000000E-09 
+ TSUPCCLKHMN    0            
+ TSUPCCLKHTY    0            
+ TSUPCCLKHMX    0            
+    THDCLKMN    5.000000E-09 
+    THDCLKTY    5.000000E-09 
+    THDCLKMX    5.000000E-09 
+  TSUCECLKMN    0            
+  TSUCECLKTY    0            
+  TSUCECLKMX    0            
+   THCECLKMN    0            
+   THCECLKTY    0            
+   THCECLKMX    0            
+
+
+**** 04/26/24 10:36:06 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\Shift register\shift registrer.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.373000E-09 
+      TSWHL2                    1.346000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.382000E-09 
+      TSWLH2                    3.424000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+WARNING -- No analog devices -- Small-Signal analysis ignored
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

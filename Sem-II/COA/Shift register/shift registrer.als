@@ -1,0 +1,17 @@
+* Schematics Aliases *
+
+.ALIASES
+U_DSTM1          DSTM1(PIN1=$N_0001 )
+U_DSTM3          DSTM3(PWR=$G_DPWR GND=$G_DGND 1=$N_0002 )
+X_U1A           U1A(CLRbar=$D_HI D=$N_0001 CLK=$N_0002 PREbar=$D_HI Q=$N_0005
++  Qbar=$N_0006 PWR=$G_DPWR GND=$G_DGND )
+X_U2A           U2A(CLRbar=$D_HI D=$N_0005 CLK=$N_0002 PREbar=$D_HI Q=$N_0007
++  Qbar=$N_0008 PWR=$G_DPWR GND=$G_DGND )
+X_U3A           U3A(CLRbar=$N_0009 D=$N_0007 CLK=$N_0002 PREbar=$D_HI Q=$N_0010
++  Qbar=$N_0011 PWR=$G_DPWR GND=$G_DGND )
+X_U4A           U4A(CLRbar=$D_HI D=$N_0010 CLK=$N_0002 PREbar=$D_HI Q=$N_0012
++  Qbar=$N_0013 PWR=$G_DPWR GND=$G_DGND )
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+

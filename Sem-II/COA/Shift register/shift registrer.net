@@ -1,0 +1,34 @@
+* Schematics Netlist *
+
+
+
+U_DSTM1         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0001 
++ IO_STM
++ IO_LEVEL=0
++  0s 0  
++ 1ms 1  
++ 2ms 0  
++ 3ms 1 
++ 4ms 0  
++ 5ms 1  
+U_DSTM3         STIM(1,1) $G_DPWR $G_DGND $N_0002 IO_STM IO_LEVEL=0 
++ 0 0
++ +0.5ms 1
++REPEAT FOREVER
++ +0.5ms 0
++  +0.5ms 1
++ ENDREPEAT
+X_U1A         $D_HI $N_0001 $N_0002 $D_HI $N_0005 $N_0006 $G_DPWR $G_DGND 7474
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         $D_HI $N_0005 $N_0002 $D_HI $N_0007 $N_0008 $G_DPWR $G_DGND 7474
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         $N_0009 $N_0007 $N_0002 $D_HI $N_0010 $N_0011 $G_DPWR $G_DGND
++  7474 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U4A         $D_HI $N_0010 $N_0002 $D_HI $N_0012 $N_0013 $G_DPWR $G_DGND 7474
++  PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0

@@ -1,0 +1,23 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\half adder\half_adder.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Apr 26 10:05:43 2024
+
+
+
+** Analysis setup **
+.tran 0ns 2s 0 0.5s
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "half_adder.net"
+.INC "half_adder.als"
+
+
+.probe
+
+
+.END

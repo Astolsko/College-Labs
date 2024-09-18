@@ -1,0 +1,23 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\S-R FLIP FLOP.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Wed Feb 21 10:11:52 2024
+
+
+
+** Analysis setup **
+.tran 0us 15us
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "S-R FLIP FLOP.net"
+.INC "S-R FLIP FLOP.als"
+
+
+.probe
+
+
+.END

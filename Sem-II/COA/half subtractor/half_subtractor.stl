@@ -1,0 +1,25 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.stl written on Fri Feb 02 11:23:53 2024
+* by Stimulus Editor -- Evaluation Version 9.1
+;!Stimulus Get
+;! Y Digital X Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4s
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Y STIM (1, 1) ;! CLOCKP 1s 0.5s 0 0
++   +0s 0
++   +500ms 1
++   Repeat Forever
++      +500ms 0
++      +500ms 1
++   EndRepeat
+.STIMULUS X STIM (1, 1) ;! CLOCKP 2ms 1ms 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
++   EndRepeat

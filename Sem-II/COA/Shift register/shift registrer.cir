@@ -1,0 +1,23 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\Shift register\shift registrer.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Apr 19 10:18:56 2024
+
+
+
+** Analysis setup **
+.tran 0ms 10ms
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "shift registrer.net"
+.INC "shift registrer.als"
+
+
+.probe
+
+
+.END

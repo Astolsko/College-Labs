@@ -1,0 +1,24 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Apr 26 10:23:21 2024
+
+
+
+** Analysis setup **
+.tran 0ns 1000ns
+.OP 
+.STMLIB "C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "exam_shifter.net"
+.INC "exam_shifter.als"
+
+
+.probe
+
+
+.END

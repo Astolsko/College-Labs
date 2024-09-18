@@ -1,0 +1,178 @@
+
+**** 02/02/24 11:24:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Feb 02 11:24:15 2024
+
+
+
+** Analysis setup **
+.tran 0.5ms 2ms
+.OP 
+.STMLIB "C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "half_subtractor.net"
+
+**** INCLUDING half_subtractor.net ****
+* Schematics Netlist *
+
+.EXTERNAL OUTPUT BORROW
+.EXTERNAL OUTPUT DIFFERENCE
+
+
+U_DSTM-X         STIM(1,0) $G_DPWR $G_DGND $N_0001 IO_STM STIMULUS=X
+U_DSTM-Y         STIM(1,0) $G_DPWR $G_DGND $N_0002 IO_STM STIMULUS=Y
+X_U1A         $N_0001 $N_0002 DIFFERENCE $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         $N_0001 $N_0003 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         $N_0003 $N_0002 BORROW $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+
+**** RESUMING half_subtractor.cir ****
+.INC "half_subtractor.als"
+
+
+
+**** INCLUDING half_subtractor.als ****
+* Schematics Aliases *
+
+.ALIASES
+U_DSTM-X          DSTM-X(PWR=$G_DPWR GND=$G_DGND OUT0=$N_0001 )
+U_DSTM-Y          DSTM-Y(PWR=$G_DPWR GND=$G_DGND OUT0=$N_0002 )
+X_U1A           U1A(A=$N_0001 B=$N_0002 Y=DIFFERENCE PWR=$G_DPWR GND=$G_DGND )
+X_U3A           U3A(A=$N_0001 Y=$N_0003 PWR=$G_DPWR GND=$G_DGND )
+X_U2A           U2A(A=$N_0003 B=$N_0002 Y=BORROW PWR=$G_DPWR GND=$G_DGND )
+_    _(DIFFERENCE=DIFFERENCE)
+_    _(BORROW=BORROW)
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+
+
+**** RESUMING half_subtractor.cir ****
+.probe
+
+
+.END
+
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.stl written on Fri Feb 02 11:23:53 2024
+* by Stimulus Editor -- Evaluation Version 9.1
+;!Stimulus Get
+;! Y Digital X Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 4s
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS Y STIM (1, 1) ;! CLOCKP 1s 0.5s 0 0
++   +0s 0
++   +500ms 1
++   Repeat Forever
++      +500ms 0
++      +500ms 1
++   EndRepeat
+.STIMULUS X STIM (1, 1) ;! CLOCKP 2ms 1ms 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
++   EndRepeat
+.STIMULUS X STIM (1, 1) ;! CLOCKP 2ms 1ms 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
++   EndRepeat
+
+**** 02/02/24 11:24:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.sch
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         D_86_1          D_86_2          D_86_3          
+      TPLHMN    0               3.600000E-09    4.800000E-09    2.400000E-09 
+      TPLHTY    0               9.000000E-09   12.000000E-09    6.000000E-09 
+      TPLHMX    0              17.000000E-09   24.000000E-09    6.000000E-09 
+      TPHLMN    0               2.000000E-09    2.800000E-09    2.400000E-09 
+      TPHLTY    0               5.000000E-09    7.000000E-09    6.000000E-09 
+      TPHLMX    0              11.000000E-09   16.000000E-09    6.000000E-09 
+
+
+               D_04            D_08            
+      TPLHMN    4.800000E-09    7.000000E-09 
+      TPLHTY   12.000000E-09   17.500000E-09 
+      TPLHMX   22.000000E-09   27.000000E-09 
+      TPHLMN    3.200000E-09    4.800000E-09 
+      TPHLTY    8.000000E-09   12.000000E-09 
+      TPHLMX   15.000000E-09   19.000000E-09 
+
+
+**** 02/02/24 11:24:20 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.373000E-09 
+      TSWHL2                    1.346000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.382000E-09 
+      TSWLH2                    3.424000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+WARNING -- No analog devices -- Small-Signal analysis ignored
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .05
+

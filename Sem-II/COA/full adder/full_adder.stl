@@ -1,0 +1,32 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\full_adder.stl written on Fri Feb 02 10:55:32 2024
+* by Stimulus Editor -- Evaluation Version 9.1
+;!Stimulus Get
+;! X Digital Y Digital Z Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 16ms
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS X STIM (1, 1) ;! CLOCKP 4ms 2ms 0 0
++   +0s 0
++   +2ms 1
++   Repeat Forever
++      +2ms 0
++      +2ms 1
++   EndRepeat
+.STIMULUS Y STIM (1, 1) ;! CLOCKP 2ms 1ms 0 0
++   +0s 0
++   +1ms 1
++   Repeat Forever
++      +1ms 0
++      +1ms 1
++   EndRepeat
+.STIMULUS Z STIM (1, 1) ;! CLOCKP 1ms 0.5ms 0 0
++   +0s 0
++   +500us 1
++   Repeat Forever
++      +500us 0
++      +500us 1
++   EndRepeat

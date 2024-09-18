@@ -1,0 +1,206 @@
+
+**** 04/26/24 10:24:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Apr 26 10:23:21 2024
+
+
+
+** Analysis setup **
+.tran 0ns 1000ns
+.OP 
+.STMLIB "C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "exam_shifter.net"
+
+**** INCLUDING exam_shifter.net ****
+* Schematics Netlist *
+
+.EXTERNAL OUTPUT OUT
+
+
+X_U4A         $N_0001 $N_0002 $N_0003 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U5A         $N_0004 $N_0002 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U6A         $N_0005 $N_0006 $N_0007 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U7A         $N_0008 $N_0006 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U8A         $N_0009 $N_0010 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U9A         $N_0011 $N_0009 $N_0012 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U10A         $N_0003 $N_0013 $N_0005 $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U11A         $N_0007 $N_0014 $N_0015 $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U12A         $N_0015 $N_0010 $N_0016 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U13A         $N_0016 $N_0012 $N_0017 $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U14A         $N_0018 $N_0019 $G_DPWR $G_DGND 7404 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U15A         $N_0017 $N_0019 $N_0020 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U16A         $N_0011 $N_0008 $N_0014 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U17A         $N_0011 $N_0004 $N_0013 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U18A         $N_0011 $N_0018 $N_0021 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U19A         $N_0020 $N_0021 OUT $G_DPWR $G_DGND 7432 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM2         STIM(1,0) $G_DPWR $G_DGND $N_0001 IO_STM STIMULUS=DSTM2
+U_DSTM1         STIM(1,0) $G_DPWR $G_DGND $N_0011 IO_STM STIMULUS=DSTM1
+
+**** RESUMING exam_shifter.cir ****
+.INC "exam_shifter.als"
+
+
+
+**** INCLUDING exam_shifter.als ****
+* Schematics Aliases *
+
+.ALIASES
+X_U4A           U4A(A=$N_0001 B=$N_0002 Y=$N_0003 PWR=$G_DPWR GND=$G_DGND )
+X_U5A           U5A(A=$N_0004 Y=$N_0002 PWR=$G_DPWR GND=$G_DGND )
+X_U6A           U6A(A=$N_0005 B=$N_0006 Y=$N_0007 PWR=$G_DPWR GND=$G_DGND )
+X_U7A           U7A(A=$N_0008 Y=$N_0006 PWR=$G_DPWR GND=$G_DGND )
+X_U8A           U8A(A=$N_0009 Y=$N_0010 PWR=$G_DPWR GND=$G_DGND )
+X_U9A           U9A(A=$N_0011 B=$N_0009 Y=$N_0012 PWR=$G_DPWR GND=$G_DGND )
+X_U10A          U10A(A=$N_0003 B=$N_0013 Y=$N_0005 PWR=$G_DPWR GND=$G_DGND )
+X_U11A          U11A(A=$N_0007 B=$N_0014 Y=$N_0015 PWR=$G_DPWR GND=$G_DGND )
+X_U12A          U12A(A=$N_0015 B=$N_0010 Y=$N_0016 PWR=$G_DPWR GND=$G_DGND )
+X_U13A          U13A(A=$N_0016 B=$N_0012 Y=$N_0017 PWR=$G_DPWR GND=$G_DGND )
+X_U14A          U14A(A=$N_0018 Y=$N_0019 PWR=$G_DPWR GND=$G_DGND )
+X_U15A          U15A(A=$N_0017 B=$N_0019 Y=$N_0020 PWR=$G_DPWR GND=$G_DGND )
+X_U16A          U16A(A=$N_0011 B=$N_0008 Y=$N_0014 PWR=$G_DPWR GND=$G_DGND )
+X_U17A          U17A(A=$N_0011 B=$N_0004 Y=$N_0013 PWR=$G_DPWR GND=$G_DGND )
+X_U18A          U18A(A=$N_0011 B=$N_0018 Y=$N_0021 PWR=$G_DPWR GND=$G_DGND )
+X_U19A          U19A(A=$N_0020 B=$N_0021 Y=OUT PWR=$G_DPWR GND=$G_DGND )
+U_DSTM2          DSTM2(PWR=$G_DPWR GND=$G_DGND OUT0=$N_0001 )
+U_DSTM1          DSTM1(PWR=$G_DPWR GND=$G_DGND OUT0=$N_0011 )
+_    _(OUT=OUT)
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+
+
+**** RESUMING exam_shifter.cir ****
+.probe
+
+
+.END
+
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.stl written on Fri Apr 26 10:23:07 2024
+* by Stimulus Editor -- Evaluation Version 9.1
+;!Stimulus Get
+;! DSTM1 Digital DSTM2 Digital
+;!Ok
+;!Plot Axis_Settings
+;!Xrange 0s 2s
+;!AutoUniverse
+;!XminRes 1ns
+;!YminRes 1n
+;!Ok
+.STIMULUS DSTM1 STIM (1, 1) ;! CLOCKP 500ms 0s 0 0
++   +0s 0
++   +500ms 1
++   Repeat Forever
++      +0s 0
++      +500ms 1
++   EndRepeat
+.STIMULUS DSTM2 STIM (1, 1) ;! CLOCKP 500ms 0s 0 0
++   +0s 0
++   +500ms 1
++   Repeat Forever
++      +0s 0
++      +500ms 1
++   EndRepeat
+.STIMULUS DSTM2 STIM (1, 1) ;! CLOCKP 500ms 0s 0 0
++   +0s 0
++   +500ms 1
++   Repeat Forever
++      +0s 0
++      +500ms 1
++   EndRepeat
+
+**** 04/26/24 10:24:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.sch
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_08            D_04            D_32            
+      TPLHMN    7.000000E-09    4.800000E-09    4.000000E-09 
+      TPLHTY   17.500000E-09   12.000000E-09   10.000000E-09 
+      TPLHMX   27.000000E-09   22.000000E-09   15.000000E-09 
+      TPHLMN    4.800000E-09    3.200000E-09    5.600000E-09 
+      TPHLTY   12.000000E-09    8.000000E-09   14.000000E-09 
+      TPHLMX   19.000000E-09   15.000000E-09   22.000000E-09 
+
+
+**** 04/26/24 10:24:05 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\exam_shifter.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.373000E-09 
+      TSWHL2                    1.346000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.382000E-09 
+      TSWLH2                    3.424000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+WARNING -- No analog devices -- Small-Signal analysis ignored
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+

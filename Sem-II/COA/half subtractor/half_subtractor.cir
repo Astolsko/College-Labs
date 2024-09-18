@@ -1,0 +1,24 @@
+* C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.sch
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Feb 02 11:24:15 2024
+
+
+
+** Analysis setup **
+.tran 0.5ms 2ms
+.OP 
+.STMLIB "C:\Users\abul4\OneDrive\Desktop\College_Labs\half subtractor\half_subtractor.stl"
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "half_subtractor.net"
+.INC "half_subtractor.als"
+
+
+.probe
+
+
+.END

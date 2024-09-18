@@ -1,0 +1,156 @@
+
+**** 04/26/24 10:30:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\half adder\half_adder.sch
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+* Schematics Version 9.1 - Web Update 1
+* Fri Apr 26 10:05:43 2024
+
+
+
+** Analysis setup **
+.tran 0ns 2s 0 0.5s
+.OP 
+
+
+* From [PSPICE NETLIST] section of pspiceev.ini:
+.lib "nom.lib"
+
+.INC "half_adder.net"
+
+**** INCLUDING half_adder.net ****
+* Schematics Netlist *
+
+
+
+X_U1A         $N_0001 $N_0002 $N_0003 $G_DPWR $G_DGND 7486 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U2A         $N_0001 $N_0002 $N_0004 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+X_U3A         $N_0001 $N_0002 $N_0004 $G_DPWR $G_DGND 7408 PARAMS:
++ IO_LEVEL=0 MNTYMXDLY=0
+U_DSTM1         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0001 
++ IO_STM
++ IO_LEVEL=0
++ TIMESTEP=1s 
++ 0s 0  
+U_DSTM2         STIM(1,1)
++ $G_DPWR $G_DGND
++ $N_0002 
++ IO_STM
++ IO_LEVEL=0
++ TIMESTEP=0.5s 
++ 0s 0  
++ 0.5s 1  
++ 1s 0  
++ 1.5s 1 
++ 2s 0  
+
+**** RESUMING half_adder.cir ****
+.INC "half_adder.als"
+
+
+
+**** INCLUDING half_adder.als ****
+* Schematics Aliases *
+
+.ALIASES
+X_U1A           U1A(A=$N_0001 B=$N_0002 Y=$N_0003 PWR=$G_DPWR GND=$G_DGND )
+X_U2A           U2A(A=$N_0001 B=$N_0002 Y=$N_0004 PWR=$G_DPWR GND=$G_DGND )
+X_U3A           U3A(A=$N_0001 B=$N_0002 Y=$N_0004 PWR=$G_DPWR GND=$G_DGND )
+U_DSTM1          DSTM1(PIN1=$N_0001 )
+U_DSTM2          DSTM2(PIN1=$N_0002 )
+_    _($G_DPWR=$G_DPWR)
+_    _($G_DGND=$G_DGND)
+.ENDALIASES
+
+
+**** RESUMING half_adder.cir ****
+.probe
+
+
+.END
+
+**** 04/26/24 10:30:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\half adder\half_adder.sch
+
+
+ ****     Digital Gate MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D0_GATE         D_86_1          D_86_2          D_86_3          
+      TPLHMN    0               3.600000E-09    4.800000E-09    2.400000E-09 
+      TPLHTY    0               9.000000E-09   12.000000E-09    6.000000E-09 
+      TPLHMX    0              17.000000E-09   24.000000E-09    6.000000E-09 
+      TPHLMN    0               2.000000E-09    2.800000E-09    2.400000E-09 
+      TPHLTY    0               5.000000E-09    7.000000E-09    6.000000E-09 
+      TPHLMX    0              11.000000E-09   16.000000E-09    6.000000E-09 
+
+
+               D_08            
+      TPLHMN    7.000000E-09 
+      TPLHTY   17.500000E-09 
+      TPLHMX   27.000000E-09 
+      TPHLMN    4.800000E-09 
+      TPHLTY   12.000000E-09 
+      TPHLMX   19.000000E-09 
+
+
+**** 04/26/24 10:30:33 *********** Evaluation PSpice (Nov 1999) **************
+
+ * C:\Users\abul4\OneDrive\Desktop\College_Labs\COA\half adder\half_adder.sch
+
+
+ ****     Digital IO  MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               IO_STM          IO_STD          
+        DRVL    0             104            
+        DRVH    0              96.4          
+       AtoD1                 AtoD_STD        
+       AtoD2                 AtoD_STD_NX     
+       AtoD3                 AtoD_STD        
+       AtoD4                 AtoD_STD_NX     
+       DtoA1 DtoA_STM        DtoA_STD        
+       DtoA2 DtoA_STM        DtoA_STD        
+       DtoA3 DtoA_STM        DtoA_STD        
+       DtoA4 DtoA_STM        DtoA_STD        
+      TSWHL1                    1.373000E-09 
+      TSWHL2                    1.346000E-09 
+      TSWHL3                    1.511000E-09 
+      TSWHL4                    1.487000E-09 
+      TSWLH1                    3.382000E-09 
+      TSWLH2                    3.424000E-09 
+      TSWLH3                    3.517000E-09 
+      TSWLH4                    3.564000E-09 
+       TPWRT  100.000000E+03  100.000000E+03 
+
+
+WARNING -- No analog devices -- Small-Signal analysis ignored
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .02
+
