@@ -1,1 +1,0 @@
-# Inorder , preorder and post order traversal of binary tree

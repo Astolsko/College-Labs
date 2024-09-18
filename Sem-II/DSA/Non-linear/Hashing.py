@@ -1,5 +1,3 @@
-# Creating a hash function in python
-
 def create_hash_table(size):
     return [None] * size
 def hash_func(value, size):
@@ -9,7 +7,7 @@ def insert(hash_table, value):
     key = hash_func(value, len(hash_table))
     if hash_table[key] is not None:
         print("Collision occurred Unable to insert")
-        return 
+        return
     hash_table[key] = value
     print("Value inserted successfully")
 
@@ -49,4 +47,3 @@ def main():
         else:
             print("Invalid choice. Please try again.")
 main()
-
