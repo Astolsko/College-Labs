@@ -36,12 +36,19 @@ int main() {
     int gd = DETECT, gm;
     initgraph(&gd, &gm, "");
 
+    // Set background color to white
+    setbkcolor(WHITE);
+    cleardevice();  // Clear the screen and apply the background color
+
+    // Set the line style to solid and increase the thickness
+    setlinestyle(SOLID_LINE, 0, 10);  // 3 is the thickness of the circles
+
     // Circle radius and positions
     int radius = 80;
 
-    // Coordinates for the top three circles (Blue, White (instead of Black), Red)
+    // Coordinates for the top three circles (Blue, Black, Red)
     int xc1 = 200, yc1 = 200;  // Blue
-    int xc2 = 350, yc2 = 200;  // White (instead of Black)
+    int xc2 = 350, yc2 = 200;  // Black
     int xc3 = 500, yc3 = 200;  // Red
 
     // Coordinates for the bottom two circles (Yellow, Green)
@@ -50,7 +57,7 @@ int main() {
 
     // Draw the circles using the Mid-Point Circle Algorithm
     midPointCircle(xc1, yc1, radius, BLUE);    // Blue circle
-    midPointCircle(xc2, yc2, radius, WHITE);   // White circle (instead of Black)
+    midPointCircle(xc2, yc2, radius, BLACK);   // Black circle
     midPointCircle(xc3, yc3, radius, RED);     // Red circle
     midPointCircle(xc4, yc4, radius, YELLOW);  // Yellow circle
     midPointCircle(xc5, yc5, radius, GREEN);   // Green circle
